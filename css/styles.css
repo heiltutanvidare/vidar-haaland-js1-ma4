@@ -1,14 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 .error {
     color: red;
     display: none;
+    margin: 10px 0;
 }
 
-img {
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+#contactForm > div {
+    width: 100%;
+}
+
+#firstName {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1em;
+    text-align: center;
+}
+
+button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: green;
+    color: #fff;
+    transition: all 0.25s ease-out;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: rgba(0, 70, 0, 1);
+}
+
+.results img {
     width: 100%;
 }
 
 .results {
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.image {
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
