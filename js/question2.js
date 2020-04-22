@@ -21,6 +21,7 @@ async function fetchGames() {
 function createGames(json) {
     const resultsContainer = document.querySelector(".results");
     const games = json.results;
+    console.log(games);
 
     let html = "";
 
